@@ -19,7 +19,7 @@ public class BaseClass {
 	
 	public BaseClass(){
 		log = LogManager.getLogger(loginStepdefinition.class);
-		driver = new EdgeDriver();
+		driver = new GeckoDriver();
 		new WebDriverWait(driver,Duration.ofSeconds(TIMEOUT));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
 		driver.manage().window().maximize();
