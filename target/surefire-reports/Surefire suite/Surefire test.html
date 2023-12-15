@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 21 19:14:36 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>351 seconds (351456 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for their desired tour package", "Searching desired tour package"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [381ffa658e0b9201feef735c5ac48066, clickElement {id=E1591AAAFA36294DB18CA384630E365B_element_166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (381ffa658e0b9201feef735c5ac48066)] -&gt; xpath: //select[@data-bind=&apos;value: selectedSortingChoice&apos;]]] -&gt; xpath: .//option[normalize-space(.) = &quot;Duration - High to Low&quot;]]
+Session ID: 381ffa658e0b9201feef735c5ac48066
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at com.actions.tourPackageActions.sort(tourPackageActions.java:46)
+	at com.stepDefinitions.tourPackageStepDefinitions.user_sorts_the_search(tourPackageStepDefinitions.java:54)
+	at ✽.user sorts the search(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/tourPackage.feature:10)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638335699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638335699'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [381ffa658e0b9201feef735c5ac48066, clickElement {id=E1591AAAFA36294DB18CA384630E365B_element_166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (381ffa658e0b9201feef735c5ac48066)] -&gt; xpath: //select[@data-bind=&apos;value: selectedSortingChoice&apos;]]] -&gt; xpath: .//option[normalize-space(.) = &quot;Duration - High to Low&quot;]]
+Session ID: 381ffa658e0b9201feef735c5ac48066
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at com.actions.tourPackageActions.sort(tourPackageActions.java:46)
+	at com.stepDefinitions.tourPackageStepDefinitions.user_sorts_the_search(tourPackageStepDefinitions.java:54)
+	at ✽.user sorts the search(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/tourPackage.feature:10)
+</pre></div></td>
+<td>25</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User edits their  mobile number", "Editing a mobile number"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:;&quot; id=&quot;loginRegisterDropdown&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; title=&quot;&quot; onclick=&quot;loginLoad()&quot;&gt;...&lt;/a&gt; is not clickable at point (1456, 18). Other element would receive the click: &lt;div class=&quot;modal fade login_reg_popup in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; id=&quot;loginRegisterPopup&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; style=&quot;display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3b079e1b25b02e4e7eff8caadf6be612, clickElement {id=C515E416FD324CC0E2EF488036D69CCC_element_62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3b079e1b25b02e4e7eff8caadf6be612)] -&gt; xpath: //a[@id=&apos;loginRegisterDropdown&apos;]]
+Session ID: 3b079e1b25b02e4e7eff8caadf6be612
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.actions.mobileUpdateAction.clickOnMyAccount(mobileUpdateAction.java:26)
+	at com.stepDefinitions.mobileUpdateStepDefinition.the_user_click_on_my_account(mobileUpdateStepDefinition.java:37)
+	at ✽.the user click on my account(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/MobileUpdate.feature:5)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704482919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace704482919'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:;&quot; id=&quot;loginRegisterDropdown&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; title=&quot;&quot; onclick=&quot;loginLoad()&quot;&gt;...&lt;/a&gt; is not clickable at point (1456, 18). Other element would receive the click: &lt;div class=&quot;modal fade login_reg_popup in&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; id=&quot;loginRegisterPopup&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; style=&quot;display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3b079e1b25b02e4e7eff8caadf6be612, clickElement {id=C515E416FD324CC0E2EF488036D69CCC_element_62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3b079e1b25b02e4e7eff8caadf6be612)] -&gt; xpath: //a[@id=&apos;loginRegisterDropdown&apos;]]
+Session ID: 3b079e1b25b02e4e7eff8caadf6be612
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.actions.mobileUpdateAction.clickOnMyAccount(mobileUpdateAction.java:26)
+	at com.stepDefinitions.mobileUpdateStepDefinition.the_user_click_on_my_account(mobileUpdateStepDefinition.java:37)
+	at ✽.the user click on my account(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/MobileUpdate.feature:5)
+</pre></div></td>
+<td>13</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register user and get successful messege", "Register an user in thomascook application"</td>
+<td></td>
+<td>165</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "cusomer wants to book the flight", "Customer user to search flight in Thomascook page"</td>
+<td></td>
+<td>30</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "User use to login the Thomascook Login page"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user used to search cruise", "user is in cruise page in thomascook page"</td>
+<td></td>
+<td>33</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User selects a Europe Tour packages", "User Selects a Holiday category"</td>
+<td></td>
+<td>27</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to the ThomasCook Loginpage", "User use to login the Thomascook Login page"</td>
+<td></td>
+<td>21</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+<tr>
+<td title='com.runner.TestNGLogin.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGLogin<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User wants to know about ThomasCook Website", "To get information about ThomasCook"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.TestNGLogin@13fd2ccd</td></tr>
+</table><p>
+</body>
+</html>

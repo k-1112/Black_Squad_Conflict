@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: com.runner.TestNGLogin
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 352.0 s <<< FAILURE! -- in com.runner.TestNGLogin
+com.runner.TestNGLogin.runScenario["User edits their  mobile number", "Editing a mobile number"](1) -- Time elapsed: 13.70 s <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="javascript:;" id="loginRegisterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="" onclick="loginLoad()">...</a> is not clickable at point (1456, 18). Other element would receive the click: <div class="modal fade login_reg_popup in" tabindex="-1" role="dialog" id="loginRegisterPopup" data-backdrop="static" data-keyboard="false" style="display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3b079e1b25b02e4e7eff8caadf6be612, clickElement {id=C515E416FD324CC0E2EF488036D69CCC_element_62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3b079e1b25b02e4e7eff8caadf6be612)] -> xpath: //a[@id='loginRegisterDropdown']]
+Session ID: 3b079e1b25b02e4e7eff8caadf6be612
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.actions.mobileUpdateAction.clickOnMyAccount(mobileUpdateAction.java:26)
+	at com.stepDefinitions.mobileUpdateStepDefinition.the_user_click_on_my_account(mobileUpdateStepDefinition.java:37)
+	at ✽.the user click on my account(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/MobileUpdate.feature:5)
+
+com.runner.TestNGLogin.runScenario["User searches for their desired tour package", "Searching desired tour package"](7) -- Time elapsed: 25.61 s <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [381ffa658e0b9201feef735c5ac48066, clickElement {id=E1591AAAFA36294DB18CA384630E365B_element_166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (381ffa658e0b9201feef735c5ac48066)] -> xpath: //select[@data-bind='value: selectedSortingChoice']]] -> xpath: .//option[normalize-space(.) = "Duration - High to Low"]]
+Session ID: 381ffa658e0b9201feef735c5ac48066
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at com.actions.tourPackageActions.sort(tourPackageActions.java:46)
+	at com.stepDefinitions.tourPackageStepDefinitions.user_sorts_the_search(tourPackageStepDefinitions.java:54)
+	at ✽.user sorts the search(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/tourPackage.feature:10)
+

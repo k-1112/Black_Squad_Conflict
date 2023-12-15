@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-22T10:16:34 IST" name="Default suite" finished-at="2023-11-22T10:21:08 IST" duration-ms="274080">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-22T10:16:34 IST" name="Default test" finished-at="2023-11-22T10:21:08 IST" duration-ms="274080">
+      <class name="com.runner.TestNGLogin">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:16:34 IST" name="setUpClass" finished-at="2023-11-22T10:16:34 IST" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e80960a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:16:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:17:12 IST" duration-ms="37493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User edits their  mobile number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Editing a mobile number"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:17:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:17:38 IST" duration-ms="26062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to know about ThomasCook Website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To get information about ThomasCook"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:17:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:18:20 IST" duration-ms="42245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user used to search cruise"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["user is in cruise page in thomascook page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:18:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:19:02 IST" duration-ms="42120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["cusomer wants to book the flight"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer user to search flight in Thomascook page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:19:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:19:46 IST" duration-ms="44170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User selects a Europe Tour packages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Selects a Holiday category"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:19:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:20:08 IST" duration-ms="22323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user navigates to the ThomasCook Loginpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User use to login the Thomascook Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:20:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:20:24 IST" duration-ms="15803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User use to login the Thomascook Login page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:20:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:20:44 IST" duration-ms="19585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register user and get successful messege"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register an user in thomascook application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:20:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-22T10:21:07 IST" duration-ms="23135" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User searches for their desired tour package"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Searching desired tour package"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6aa679db34b9939ac52d92704ec8783, clickElement {id=8911A403D3561274E29BC0D285CEBD80_element_213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58067/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b6aa679db34b9939ac52d92704ec8783)] -> xpath: //select[@data-bind='value: selectedSortingChoice']]] -> xpath: .//option[normalize-space(.) = "Duration - High to Low"]]
+Session ID: b6aa679db34b9939ac52d92704ec8783]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6aa679db34b9939ac52d92704ec8783, clickElement {id=8911A403D3561274E29BC0D285CEBD80_element_213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\KMURAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58067/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b6aa679db34b9939ac52d92704ec8783)] -> xpath: //select[@data-bind='value: selectedSortingChoice']]] -> xpath: .//option[normalize-space(.) = "Duration - High to Low"]]
+Session ID: b6aa679db34b9939ac52d92704ec8783
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+at com.actions.tourPackageActions.sort(tourPackageActions.java:46)
+at com.stepDefinitions.tourPackageStepDefinitions.user_sorts_the_search(tourPackageStepDefinitions.java:54)
+at ✽.user sorts the search(file:///C:/BlackSquad_PilotProject_1/Thomascook/src/test/resources/features/tourPackage.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.TestNGLogin@1040be71]" started-at="2023-11-22T10:21:07 IST" name="tearDownClass" finished-at="2023-11-22T10:21:08 IST" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.TestNGLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
